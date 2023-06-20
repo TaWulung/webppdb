@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pendaftaran Siswa Baru</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">SMA NEGERI 1 SULAMU</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="pengumuman.html">PENGUMUMAN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+    <!-- CONTENT -->
+    <div class="container">
+      <h3 class="py-2 text-center">Harap memberikan informasi yang tepat!</h3>
+      <p class="highlight col-md-8 mb-3" >Data Siswa</p>
+      <form name="submit-to-google-sheet">
+        <div class="row">   
+          <div class="col-md-8 mb-3">
+            <label for="namalengkap" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="namalengkap" name="nama lengkap" required/>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="nik" class="form-label">NIK</label>
+            <input type="text" class="form-control" id="nik" name="nik" required/>
+            <small class="form-text text-muted">Lihat di Kartu Keluarga</small>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+            <select class="form-select" id="jenisKelamin" name="jenis Kelamin">
+              <option value="laki-laki">Laki-laki</option>
+              <option value="perempuan">Perempuan</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="agama" class="form-label">Agama</label>
+            <select class="form-select" id="Agama" name="agama">
+              <option value="Katolik">Katolik</option>
+              <option value="Protestan">Protestan</option>
+              <option value="Islam">Islam</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Budha">Budha</option>
+            </select>      
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="tempatLahir" class="form-label">Tempat Lahir</label>
+            <input type="text" class="form-control" id="tempatLahir" name="tempat lahir" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="tanggalLahir" class="form-label">Tanggal Lahir</label>
+            <input type="date" class="form-control" id="tanggalLahir" name="tanggal lahir" required/>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="rt" class="form-label">RT</label>
+            <input type="text" class="form-control" id="rt" name="rt">
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="rw" class="form-label">RW</label>
+            <input type="text" class="form-control" id="rw" name="rw">
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="desa/Kelurahan" class="form-label">Desa/Kelurahan</label>
+            <input type="text" class="form-control" id="desa/Kelurahan" name="desa">
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="kecamatan" class="form-label">Kecamatan</label>
+            <input type="text" class="form-control" id="kecamatan" name="kecamatan">
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="kabupaten" class="form-label">Kabupaten</label>
+            <input type="text" class="form-control" id="kabupaten" name="kabupaten">
+          </div>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="modatransportasi" class="form-label">Moda Transportasi</label>
+            <select class="form-select" id="modatransportasi" name="moda transportasi">
+              <option value="Jalan Kaki">Jalan Kaki</option>
+              <option value="Kendaraan Pribadi">Kendaraan Pribadi</option>
+              <option value="Kendaraan Umum">Kendaraan Umum</option>
+            </select>      
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="Tempattinggal" class="form-label">Tempat Tinggal</label>
+            <select class="form-select" id="Tempattinggal" name="tempat tinggal">
+              <option value="Bersama Orang Tua">Bersama Orang Tua</option>
+              <option value="Bersama Wali">Bersama Wali</option>
+              <option value="Kos">Kos</option>
+            </select>
+            <small class="form-text text-muted">Diisi berdasarkan keadaan peserta didik ketika bersekolah</small>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="anakkeberapa" class="form-label">Anak ke Berapa</label>
+            <input type="text" class="form-control" id="anakkeberapa" name="anak ke berapa">
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="No.HP" class="form-label">No.HP</label>
+            <input type="text" class="form-control" id="No.HP" name="no.hp">
+          </div>
+      <p class="highlight col-md-8 mb-3 mt-3" >Data Orang Tua</p>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="namaayah" class="form-label">Nama Ayah</label>
+            <input type="text" class="form-control" id="namaayah" name="nama ayah" />
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="namaibu" class="form-label">Nama Ibu</label>
+            <input type="text" class="form-control" id="namaibu" name="nama ibu" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="pendidikanayah" class="form-label">Pendidikan Ayah</label>
+            <select class="form-select" id="pendidikanayah" name="pendidikan ayah">
+              <option value="Tidak Sekolah">Tidak Sekolah</option>
+              <option value="SD Sederajat">SD Sederajat</option>
+              <option value="SMP Sederajat">SMP Sederajat</option>
+              <option value="SMA Sederajat">SMA Sederajat</option>
+              <option value="D1">D1</option>
+              <option value="D2">D2</option>
+              <option value="D3">D3</option>
+              <option value="D4/S1">D4/S1</option>
+              <option value="S2">S2</option>
+              <option value="S3">S3</option>
+            </select>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="pendidikanibu" class="form-label">Pendidikan Ibu</label>
+            <select class="form-select" id="pendidikanibu" name="pendidikan ibu">
+              <option value="Tidak Sekolah">Tidak Sekolah</option>
+              <option value="SD Sederajat">SD Sederajat</option>
+              <option value="SMP Sederajat">SMP Sederajat</option>
+              <option value="SMA Sederajat">SMA Sederajat</option>
+              <option value="D1">D1</option>
+              <option value="D2">D2</option>
+              <option value="D3">D3</option>
+              <option value="D4/S1">D4/S1</option>
+              <option value="S2">S2</option>
+              <option value="S3">S3</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mb-3">
+            <label for="pekerjaanayah" class="form-label">Pekerjaan Ayah</label>
+            <select class="form-select" id="pekerjaanayah" name="pekerjaan ayah">
+              <option value="Tidak Bekerja">Tidak Bekerja</option>
+              <option value="Nelayan">Nelayan</option>
+              <option value="Petani">Petani</option>
+              <option value="Peternak">Peternak</option>
+              <option value="PNS/TNI/POLRI">PNS/TNI/POLRI</option>
+              <option value="Karyawan Swasta">Karyawan Swasta</option>
+              <option value="Pedagang">Pedagang</option>
+              <option value="Wiraswasta">Wiraswasta</option>
+              <option value="Buruh">Buruh</option>
+              <option value="Pensiunan">Pensiunan</option>
+            </select>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="pekerjaanibu" class="form-label">Pekerjaan Ibu</label>
+            <select class="form-select" id="pekerjaanibu" name="pekerjaan ibu">
+              <option value="Tidak Bekerja">Tidak Bekerja</option>
+              <option value="Nelayan">Nelayan</option>
+              <option value="Petani">Petani</option>
+              <option value="Peternak">Peternak</option>
+              <option value="PNS/TNI/POLRI">PNS/TNI/POLRI</option>
+              <option value="Karyawan Swasta">Karyawan Swasta</option>
+              <option value="Pedagang">Pedagang</option>
+              <option value="Wiraswasta">Wiraswasta</option>
+              <option value="Buruh">Buruh</option>
+              <option value="Pensiunan">Pensiunan</option>
+            </select>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="penghasilanbulananayah" class="form-label">Penghasilan Bulanan Ayah</label>
+            <select class="form-select" id="penghasilanbulananayah" name="penghasilan bulanan ayah">
+              <option value="Tidak Berpenghasilan">Tidak Berpenghasilan</option>
+              <option value="&ltRp.500.000">&ltRp.500.000</option>
+              <option value="Rp.500.000-Rp.999.999">Rp.500.000-Rp.999.999</option>
+              <option value="Rp.1.000.000-Rp.1.999.999">Rp.1.000.000-Rp.1.999.999</option>
+              <option value="Rp.2.000.000-Rp.4.999.999">Rp.2.000.000-Rp.4.999.999</option>
+              <option value="&gtRp.5.000.000">&gtRp.5.000.000</option>
+            </select>
+          </div>
+          <div class="col-md-8 mb-3">
+            <label for="penghasilanbulananibu" class="form-label">Penghasilan Bulanan Ibu</label>
+            <select class="form-select" id="penghasilanbulananibu" name="penghasilan bulanan ibu">
+              <option value="Tidak Berpenghasilan">Tidak Berpenghasilan</option>
+              <option value="&ltRp.500.000">&ltRp.500.000</option>
+              <option value="Rp.500.000-Rp.999.999">Rp.500.000-Rp.999.999</option>
+              <option value="Rp.1.000.000-Rp.1.999.999">Rp.1.000.000-Rp.1.999.999</option>
+              <option value="Rp.2.000.000-Rp.4.999.999">Rp.2.000.000-Rp.4.999.999</option>
+              <option value="&gtRp.5.000.000">&gtRp.5.000.000</option>
+            </select>
+          </div>
+        </div>
+      <p class="highlight col-md-8 mb-3" >Data Registrasi Siswa</p>
+      <div class="row">
+        <div class="col-md-8 mb-3">
+          <label for="Sekolah Asal" class="form-label">Sekolah Asal</label>
+          <input type="text" class="form-control" id="Sekolah Asal" name="sekolah asal" required />
+        </div>
+        <div class="col-md-8 mb-5">
+          <label for="NISN" class="form-label">NISN</label>
+          <input type="text" class="form-control" id="NISN" name="nisn" required/>
+          <small class="form-text text-muted">Untuk NISN dapat dilihat di Ijasah atau di SKHU sekolah asal</small>
+        </div>
+        
+      </div>
+      </form>
+      <div class="row">
+        <div class="col-md-12 mt-5 mb-5">
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </div>
+      </div>
+    </div>
+        <!-- Tautkan file JavaScript Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('.navbar-toggler').click(function() {
+              $('.navbar-collapse').toggleClass('show');
+            });
+      
+            $('.navbar-collapse .nav-link').click(function() {
+              $('.navbar-collapse').removeClass('show');
+            });
+          });
+        </script>
+  </body>
+</html>

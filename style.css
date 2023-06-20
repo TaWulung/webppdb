@@ -1,0 +1,23 @@
+.jumbotron {
+  padding-top: 2rem;
+  background-image: url(image/bender\ 1\ copy.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+}
+
+.jumbotron p {
+  padding-top: 2rem;
+  font-size: 25px;
+}
+
+.container {
+  width: 100%;
+}
+
+.highlight {
+  background-color: rgba(0, 238, 255, 0.829);
+  font-weight: bold;
+  text-align: left;
+}
