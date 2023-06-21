@@ -2,10 +2,30 @@
 <html>
 <head>
   <title>Ucapan Terima Kasih</title>
+  <style>
+    .success-message {
+      color: green;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-  <h1 class="text-center">Terima Kasih!</h1>
-  <p class="text-center">Terima kasih atas pengisian formulir. Data Anda telah berhasil dikirim.</p>
+  <h1>Terima Kasih!</h1>
+  <p>Terima kasih atas pengisian formulir. Data Anda telah berhasil dikirim.</p>
+  <p>Kami akan segera menghubungi Anda.</p>
 
+  <div class="success-message" id="successMessage"></div>
+
+  <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var isSuccess = urlParams.get('success');
+
+    if (isSuccess === "true") {
+      var successMessage = document.getElementById('successMessage');
+      successMessage.innerText = 'Formulir berhasil direkam!';
+    }
+  </script>
 </body>
 </html>
