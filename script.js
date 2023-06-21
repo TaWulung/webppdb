@@ -5,7 +5,7 @@ $(document).ready(function() {
       var formData = $(this).serialize(); // Mengambil data formulir
   
       $.ajax({
-        url: 'https://script.google.com/macros/s/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx/exe"https://script.google.com/macros/s/AKfycbyekmo2SdMHusXaYmKFuuRQrP7zEC0Hk-yA6NIDKTCJ5Q5ktItba_8IcD3udgFOO83i/exec',
+        url: 'https://script.google.com/macros/s/AKfycbyekmo2SdMHusXaYmKFuuRQrP7zEC0Hk-yA6NIDKTCJ5Q5ktItba_8IcD3udgFOO83i/exec',
         method: 'POST',
         data: formData,
         success: function(response) {
